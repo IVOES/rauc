@@ -1,0 +1,314 @@
+contrib/cgi/src/cgi.c:617:19: warning: Either the condition '!error' is redundant or there is possible null pointer dereference: error. [nullPointerRedundantCheck]
+  if (!error && !*error)
+                  ^
+contrib/cgi/src/cgi.c:617:7: note: Assuming that condition '!error' is not redundant
+  if (!error && !*error)
+      ^
+contrib/cgi/src/cgi.c:617:19: note: Null pointer dereference
+  if (!error && !*error)
+                  ^
+contrib/cgi/src/cgi.c:556:20: style: Variable 'items_read' is assigned a value that is never used. [unreadVariable]
+ gint64 items_read = 0;
+                   ^
+contrib/cgi/src/cgi.c:558:18: style: Variable 'percentage' is assigned a value that is never used. [unreadVariable]
+ gint percentage = 0;
+                 ^
+src/bootchooser.c:171:29: error: syntax error [syntaxError]
+ g_assert_cmpuint(pairs->len, >, 0);
+                            ^
+src/bundle.c:547:23: error: syntax error [syntaxError]
+ g_assert_cmpint(count, !=, 0);
+                      ^
+src/bundle.c:2747:0: information: Skipping configuration 'ENABLE_STREAMING' since the value of 'ENABLE_STREAMING' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ } else if (ENABLE_STREAMING && bundle->nbd_srv) { /* streaming bundle access */
+^
+src/bundle.c:2858:0: information: Skipping configuration 'ENABLE_STREAMING' since the value of 'ENABLE_STREAMING' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ if (ENABLE_STREAMING && bundle->nbd_dev) {
+^
+src/bundle.c:2866:0: information: Skipping configuration 'ENABLE_STREAMING' since the value of 'ENABLE_STREAMING' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ if (ENABLE_STREAMING && bundle->nbd_srv) {
+^
+src/bundle.c:2899:0: information: Skipping configuration 'ENABLE_STREAMING' since the value of 'ENABLE_STREAMING' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ if (ENABLE_STREAMING && bundle->nbd_dev)
+^
+src/bundle.c:2901:0: information: Skipping configuration 'ENABLE_STREAMING' since the value of 'ENABLE_STREAMING' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ if (ENABLE_STREAMING && bundle->nbd_srv)
+^
+src/bundle.c:2919:0: information: Skipping configuration 'ENABLE_STREAMING' since the value of 'ENABLE_STREAMING' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ if (ENABLE_STREAMING) {
+^
+src/config_file.c:11:1: error: There is an unknown macro here somewhere. Configuration is required. If G_DEFINE_QUARK is a macro then please configure it. [unknownMacro]
+G_DEFINE_QUARK(r-config-error-quark, r_config_error)
+^
+src/context.c:503:28: error: syntax error [syntaxError]
+ g_assert_cmpint(percentage, <=, 100);
+                           ^
+src/install.c:1330:37: error: syntax error [syntaxError]
+ g_assert_cmpint(args->status_result, >=, 0);
+                                    ^
+src/main.c:1887:15: style: Variable 'res' is assigned a value that is never used. [unreadVariable]
+ gboolean res = FALSE;
+              ^
+src/main.c:1217:0: information: Skipping configuration 'ENABLE_JSON' since the value of 'ENABLE_JSON' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ } else if (ENABLE_JSON && g_strcmp0(output_format, "json") == 0) {
+^
+src/main.c:1219:0: information: Skipping configuration 'ENABLE_JSON' since the value of 'ENABLE_JSON' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ } else if (ENABLE_JSON && g_strcmp0(output_format, "json-pretty") == 0) {
+^
+src/main.c:1221:0: information: Skipping configuration 'ENABLE_JSON' since the value of 'ENABLE_JSON' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ } else if (ENABLE_JSON && g_strcmp0(output_format, "json-2") == 0) {
+^
+src/main.c:1864:0: information: Skipping configuration 'ENABLE_JSON' since the value of 'ENABLE_JSON' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ } else if (ENABLE_JSON && g_strcmp0(output_format, "json") == 0) {
+^
+src/main.c:1866:0: information: Skipping configuration 'ENABLE_JSON' since the value of 'ENABLE_JSON' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ } else if (ENABLE_JSON && g_strcmp0(output_format, "json-pretty") == 0) {
+^
+src/manifest.c:34:43: error: syntax error [syntaxError]
+ g_assert_cmpint(g_strv_length(groupsplit), >=, 2);
+                                          ^
+src/nbd.c:326:22: error: syntax error [syntaxError]
+ g_assert_cmpint(size, ==, 1); /* according to the docs, size is always 1 */
+                     ^
+src/signature.c:665:19: error: syntax error [syntaxError]
+ g_assert_cmpint(n, ==, SHA256_DIGEST_LENGTH);
+                  ^
+src/utils.c:385:26: style: Expression is always true because 'else if' condition is opposite to previous condition at line 383. [multiCondition]
+  } else if ((size_t)ret > remaining) {
+                         ^
+src/utils.c:383:26: note: first condition
+  } else if ((size_t)ret <= remaining) {
+                         ^
+src/utils.c:385:26: note: else if condition is opposite to first condition
+  } else if ((size_t)ret > remaining) {
+                         ^
+src/utils.c:412:26: style: Expression is always true because 'else if' condition is opposite to previous condition at line 410. [multiCondition]
+  } else if ((size_t)ret > remaining) {
+                         ^
+src/utils.c:410:26: note: first condition
+  } else if ((size_t)ret <= remaining) {
+                         ^
+src/utils.c:412:26: note: else if condition is opposite to first condition
+  } else if ((size_t)ret > remaining) {
+                         ^
+src/utils.c:445:26: style: Expression is always true because 'else if' condition is opposite to previous condition at line 443. [multiCondition]
+  } else if ((size_t)ret > remaining) {
+                         ^
+src/utils.c:443:26: note: first condition
+  } else if ((size_t)ret <= remaining) {
+                         ^
+src/utils.c:445:26: note: else if condition is opposite to first condition
+  } else if ((size_t)ret > remaining) {
+                         ^
+src/utils.c:472:26: style: Expression is always true because 'else if' condition is opposite to previous condition at line 470. [multiCondition]
+  } else if ((size_t)ret > remaining) {
+                         ^
+src/utils.c:470:26: note: first condition
+  } else if ((size_t)ret <= remaining) {
+                         ^
+src/utils.c:472:26: note: else if condition is opposite to first condition
+  } else if ((size_t)ret > remaining) {
+                         ^
+src/verity_hash.c:137:11: style: The scope of the variable 's' can be reduced. [variableScope]
+ uint64_t s, s_shift;
+          ^
+src/verity_hash.c:137:14: style: The scope of the variable 's_shift' can be reduced. [variableScope]
+ uint64_t s, s_shift;
+             ^
+src/verity_hash.c:188:9: style: The scope of the variable 'left_bytes' can be reduced. [variableScope]
+ size_t left_bytes;
+        ^
+test/boot_switch.c:108:29: error: syntax error [syntaxError]
+  g_assert_cmpint(sectorsize, ==, 512);
+                            ^
+test/bundle.c:322:44: error: syntax error [syntaxError]
+ g_assert_cmpuint(g_list_length(rm->images), ==, 2);
+                                           ^
+test/checksum.c:55:33: error: syntax error [syntaxError]
+ g_assert_cmpstr(checksum.digest, ==, TEST_DIGEST_GOOD);
+                                ^
+test/common.c:395:20: error: syntax error [syntaxError]
+ g_assert_cmpint(fd, >, 0);
+                   ^
+test/config_file.c:116:43: error: syntax error [syntaxError]
+ g_assert_cmpstr(config->system_compatible, ==, "FooCorp Super BarBazzer");
+                                          ^
+test/context.c:16:39: error: syntax error [syntaxError]
+ g_assert_cmpstr(r_context()->bootslot, ==, "A");
+                                      ^
+test/dm.c:62:26: error: syntax error [syntaxError]
+   g_assert_cmpint(offset, <=, g_bytes_get_size(original));
+                         ^
+test/hash_index.c:45:24: error: syntax error [syntaxError]
+ g_assert_cmpint(datafd, >, 0);
+                       ^
+test/install.c:311:98: error: syntax error [syntaxError]
+ g_assert_cmpint(((RaucSlot*) g_hash_table_lookup(r_context()->config->slots, "rescue.0"))->state, ==, ST_INACTIVE);
+                                                                                                 ^
+test/manifest.c:21:39: error: syntax error [syntaxError]
+ g_assert_cmpstr(rm->update_compatible, ==, "FooCorp Super BarBazzer");
+                                      ^
+test/nbd.c:88:23: error: syntax error [syntaxError]
+ g_assert_cmphex(magic, ==, GUINT32_TO_LE(0x73717368));
+                      ^
+test/network.c:42:34: error: syntax error [syntaxError]
+ g_assert_cmpint(g_unlink(target), ==, 0);
+                                 ^
+test/progress.c:17:28: error: syntax error [syntaxError]
+ g_assert_cmpint(percentage, >=, 0);
+                           ^
+test/service.c:102:29: error: syntax error [syntaxError]
+  g_assert_cmpint(percentage, ==, cmp_percentage);
+                            ^
+test/signature.c:247:20: error: syntax error [syntaxError]
+ g_assert_cmpint(fd, >=, 0);
+                   ^
+test/slot.c:57:44: error: syntax error [syntaxError]
+ g_assert_cmpint(g_list_length(child_slots), ==, 3);
+                                           ^
+test/stats.c:29:30: error: syntax error [syntaxError]
+ g_assert_cmpstr(stats->label, ==, "test");
+                             ^
+test/update_handler.c:484:49: error: syntax error [syntaxError]
+  g_assert_cmpint(get_file_size(imagepath, NULL), ==, image_size);
+                                                ^
+test/utils.c:16:21: error: syntax error [syntaxError]
+ g_assert_cmpstr(str, ==, "foo");
+                    ^
+src/utils.c:172:0: style: The function 'check_remaining_groups' is never used. [unusedFunction]
+
+^
+src/utils.c:187:0: style: The function 'check_remaining_keys' is never used. [unusedFunction]
+
+^
+src/utils.c:44:0: style: The function 'close_preserve_errno' is never used. [unusedFunction]
+
+^
+src/utils.c:93:0: style: The function 'copy_file' is never used. [unusedFunction]
+
+^
+src/network.c:141:0: style: The function 'download_file' is never used. [unusedFunction]
+
+^
+test/install-fixtures.c:117:0: style: The function 'fixture_helper_set_up_bundle' is never used. [unusedFunction]
+
+^
+test/install-fixtures.c:83:0: style: The function 'fixture_helper_set_up_system' is never used. [unusedFunction]
+
+^
+src/update_handler.c:2706:0: style: The function 'hook_install_handler' is never used. [unusedFunction]
+
+^
+src/utils.c:248:0: style: The function 'key_file_consume_binary_suffixed_string' is never used. [unusedFunction]
+
+^
+src/utils.c:230:0: style: The function 'key_file_consume_integer' is never used. [unusedFunction]
+
+^
+src/network.c:25:0: style: The function 'network_init' is never used. [unusedFunction]
+
+^
+src/crypt.c:164:0: style: The function 'r_crypt_decrypt' is never used. [unusedFunction]
+
+^
+src/crypt.c:159:0: style: The function 'r_crypt_encrypt' is never used. [unusedFunction]
+
+^
+src/crypt.c:11:0: style: The function 'r_crypt_error_quark' is never used. [unusedFunction]
+
+^
+src/dm.c:87:0: style: The function 'r_dm_free' is never used. [unusedFunction]
+
+^
+src/dm.c:77:0: style: The function 'r_dm_new_crypt' is never used. [unusedFunction]
+
+^
+src/dm.c:67:0: style: The function 'r_dm_new_verity' is never used. [unusedFunction]
+
+^
+src/dm.c:315:0: style: The function 'r_dm_remove' is never used. [unusedFunction]
+
+^
+src/dm.c:125:0: style: The function 'r_dm_setup' is never used. [unusedFunction]
+
+^
+src/hash_index.c:14:0: style: The function 'r_hash_index_error_quark' is never used. [unusedFunction]
+
+^
+src/hash_index.c:403:0: style: The function 'r_hash_index_export' is never used. [unusedFunction]
+
+^
+src/utils.c:318:0: style: The function 'r_hex_decode' is never used. [unusedFunction]
+
+^
+src/mount.c:18:0: style: The function 'r_mount_bundle' is never used. [unusedFunction]
+
+^
+src/mount.c:114:0: style: The function 'r_setup_loop' is never used. [unusedFunction]
+
+^
+src/slot.c:229:0: style: The function 'r_slot_clean_data_directory' is never used. [unusedFunction]
+
+^
+src/slot.c:164:0: style: The function 'r_slot_is_mountable' is never used. [unusedFunction]
+
+^
+src/slot.c:153:0: style: The function 'r_slot_is_valid_type' is never used. [unusedFunction]
+
+^
+src/slot.c:304:0: style: The function 'r_slot_list_contains' is never used. [unusedFunction]
+
+^
+src/utils.c:20:0: style: The function 'r_subprocess_new' is never used. [unusedFunction]
+
+^
+src/stats.c:117:0: style: The function 'r_test_stats_next' is never used. [unusedFunction]
+
+^
+src/stats.c:102:0: style: The function 'r_test_stats_start' is never used. [unusedFunction]
+
+^
+src/stats.c:110:0: style: The function 'r_test_stats_stop' is never used. [unusedFunction]
+
+^
+src/mount.c:38:0: style: The function 'r_umount_bundle' is never used. [unusedFunction]
+
+^
+src/update_handler.c:29:0: style: The function 'r_update_error_quark' is never used. [unusedFunction]
+
+^
+src/utils.c:566:0: style: The function 'r_update_symlink' is never used. [unusedFunction]
+
+^
+src/utils.c:15:0: style: The function 'r_utils_error_quark' is never used. [unusedFunction]
+
+^
+src/verity_hash.c:421:0: style: The function 'r_verity_hash_create' is never used. [unusedFunction]
+
+^
+src/verity_hash.c:431:0: style: The function 'r_verity_hash_verify' is never used. [unusedFunction]
+
+^
+src/utils.c:301:0: style: The function 'r_whitespace_removed' is never used. [unusedFunction]
+
+^
+src/utils.c:394:0: style: The function 'r_write_exact' is never used. [unusedFunction]
+
+^
+src/utils.c:53:0: style: The function 'read_file' is never used. [unusedFunction]
+
+^
+src/utils.c:64:0: style: The function 'read_file_str' is never used. [unusedFunction]
+
+^
+src/utils.c:165:0: style: The function 'resolve_path_take' is never used. [unusedFunction]
+
+^
+src/service.c:486:0: style: The function 'set_last_error' is never used. [unusedFunction]
+
+^
+src/checksum.c:73:0: style: The function 'verify_checksum' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+

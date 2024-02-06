@@ -6,6 +6,8 @@
 #meson setup build
 #meson compile -C build
 
+sudo apt install build-essential libdbus-glib-1-dev libgirepository1.0-dev
+
 ./autogen.sh
 ./configure
 make

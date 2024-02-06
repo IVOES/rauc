@@ -37,6 +37,7 @@ jobs:
         uses: github/codeql-action/analyze@v2
         with:
           category: "/language:cpp"
+          upload: false
         id: step1
 
       - name: Filter out unwanted errors and warnings

@@ -63,4 +63,12 @@ jobs:
         uses: github/codeql-action/upload-sarif@v2
         with:
           sarif_file: ${{ steps.step1.outputs.sarif-output }}
-          category: "/language:${{matrix.language}}"
+          category: "/language:cpp"
+
+      - name: Upload CodeQL results as an artifact
+        if: success() || failure()
+        uses: actions/upload-artifact@v3
+        with:
+          name: codeql-results
+          path: ${{ steps.step1.outputs.sarif-output }}
+          retention-days: 5
